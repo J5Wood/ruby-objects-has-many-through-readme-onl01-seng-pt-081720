@@ -9,4 +9,5 @@ class Waiter
     @experience = experience
     @@all << self
   end
+  
 end
