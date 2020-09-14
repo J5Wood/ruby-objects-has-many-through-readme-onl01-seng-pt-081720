@@ -23,10 +23,11 @@ class Customer
   end
 
   def waiters
-    Meal.all.select do |meal| 
-      if meal.customer == self 
+    Meal.all.select do |meal|
+      if meal.customer == self
         meal.waiter
       end
     end
   end
+  
 end
